@@ -8,7 +8,8 @@ type Props = {
 export function TrackDetails({trackId}: Props) {
  
   const {trackDetails, loading} = useTrackDetail(trackId)
-
+  console.log(trackDetails)
+  
   return (
     <div className={styles.details_block}>
       <h2 className={styles.player__title}>Details</h2>
